@@ -1,0 +1,542 @@
+﻿<!doctype html>
+<html lang="en" dir="ltr">
+<!-- Copied from http://epic.puffintheme.com/html/theme2/hr-users.html by Cyotek WebCopy 1.8.0.652, Sunday, August 02, 2020, 8:10:19 PM -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<title>:: Epic :: HR Users</title>
+
+<!-- Bootstrap Core and vandor -->
+<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/plugins/bootstrap-multiselect/bootstrap-multiselect.css">
+<link rel="stylesheet" href="assets/plugins/dropify/css/dropify.min.css">
+<link rel="stylesheet" href="assets/plugins/parsleyjs/css/parsley.css">
+<link rel="stylesheet" href="assets/plugins/sweetalert/sweetalert.css">
+
+<!-- Core css -->
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/theme1.css">
+</head>
+
+<body class="font-montserrat sidebar_dark">
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+    <div class="loader">
+    </div>
+</div>
+
+<div id="main_content">
+    <div id="commonContent">
+        
+    </div>
+    <div class="page">
+        <div id="page_top" class="section-body ">
+            <div class="container-fluid">
+                <div class="page-header">
+                    <div class="left">
+                        <h1 class="page-title">Users</h1>                        
+                    </div>
+                    <div class="right" id="toprightContent">
+                        
+                    </div>
+               </div>
+            </div>
+        </div>
+        <div class="section-body">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-between align-items-center">
+                    <ul class="nav nav-tabs page-header-tab">
+                        <li class="nav-item"><a class="nav-link active" id="user-tab" data-toggle="tab" href="#user-list">List</a></li>
+                        <li class="nav-item"><a class="nav-link" id="user-tab" data-toggle="tab" href="#user-add">Add New</a></li>
+                    </ul>
+                    <div class="header-action">
+                        <button type="button" class="btn btn-primary"><i class="fe fe-plus mr-2"></i>Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-body mt-3">
+            <div class="container-fluid">
+                <div class="tab-content mt-3">
+                    <div class="tab-pane fade show active" id="user-list" role="tabpanel">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">User List</h3>
+                                <div class="card-options">
+                                    <form>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control form-control-sm" placeholder="Search something..." name="s">
+                                            <span class="input-group-btn ml-2"><button class="btn btn-sm btn-default" type="submit"><span class="fe fe-search"></span></button></span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-hover table-vcenter text-nowrap mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th class="w60">Name</th>
+                                                <th></th>
+                                                <th></th>
+                                                <th>Created Date</th>
+                                                <th>Role</th>
+                                                <th class="w100">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="width45">
+                                                    <span class="avatar avatar-blue" data-toggle="tooltip" data-placement="top" title="" data-original-title="Avatar Name">NG</span>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">Marshall Nichols</h6>
+                                                    <span>marshall-n@gmail.com</span>
+                                                </td>
+                                                <td><span class="tag tag-danger">Super Admin</span></td>
+                                                <td>24 Jun, 2015</td>
+                                                <td>CEO and Founder</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="assets/images/xs/avatar1.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">Susie Willis</h6>
+                                                    <span>sussie-w@gmail.com</span>
+                                                </td>
+                                                <td><span class="tag tag-info">Admin</span></td>
+                                                <td>28 Jun, 2015</td>
+                                                <td>Team Lead</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-icon" title="Edit"><i class="fa fa-edit"></i></button>
+                                                    <button type="button" class="btn btn-icon js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="assets/images/xs/avatar2.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">Debra Stewart</h6>
+                                                    <span>debra@gmail.com</span>
+                                                </td>
+                                                <td><span class="tag tag-default">Employee</span></td>
+                                                <td>21 July, 2015</td>
+                                                <td>Team Lead</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-icon" title="Edit"><i class="fa fa-edit"></i></button>
+                                                    <button type="button" class="btn btn-icon js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="avatar avatar-green" data-toggle="tooltip" data-placement="top" title="" data-original-title="Avatar Name">KH</span>                                                    
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">Erin Gonzales</h6>
+                                                    <span>Erinonzales@gmail.com</span>
+                                                </td>
+                                                <td><span class="tag tag-default">Employee</span></td>
+                                                <td>21 July, 2015</td>
+                                                <td>Web Developer</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-icon" title="Edit"><i class="fa fa-edit"></i></button>
+                                                    <button type="button" class="btn btn-icon js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="assets/images/xs/avatar3.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">Susie Willis</h6>
+                                                    <span>sussie-w@gmail.com</span>
+                                                </td>
+                                                <td><span class="tag tag-info">Admin</span></td>
+                                                <td>28 Jun, 2015</td>
+                                                <td>Team Lead</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-icon" title="Edit"><i class="fa fa-edit"></i></button>
+                                                    <button type="button" class="btn btn-icon js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="assets/images/xs/avatar4.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">Debra Stewart</h6>
+                                                    <span>debra@gmail.com</span>
+                                                </td>
+                                                <td><span class="tag tag-default">Employee</span></td>
+                                                <td>21 July, 2015</td>
+                                                <td>Team Lead</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-icon" title="Edit"><i class="fa fa-edit"></i></button>
+                                                    <button type="button" class="btn btn-icon js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="assets/images/xs/avatar5.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">Erin Gonzales</h6>
+                                                    <span>Erinonzales@gmail.com</span>
+                                                </td>
+                                                <td><span class="tag tag-default">Employee</span></td>
+                                                <td>21 July, 2016</td>
+                                                <td>Web Developer</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-icon" title="Edit"><i class="fa fa-edit"></i></button>
+                                                    <button type="button" class="btn btn-icon js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="assets/images/xs/avatar6.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">Ava Alexander</h6>
+                                                    <span>alexander@gmail.com</span>
+                                                </td>
+                                                <td><span class="tag tag-success">HR Admin</span></td>
+                                                <td>21 July, 2016</td>
+                                                <td>HR</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-icon" title="Edit"><i class="fa fa-edit"></i></button>
+                                                    <button type="button" class="btn btn-icon js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="avatar avatar-green" data-toggle="tooltip" data-placement="top" title="" data-original-title="Avatar Name">KH</span>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">Ava Alexander</h6>
+                                                    <span>alexander@gmail.com</span>
+                                                </td>
+                                                <td><span class="tag tag-success">HR Admin</span></td>
+                                                <td>21 July, 2019</td>
+                                                <td>HR</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-icon" title="Edit"><i class="fa fa-edit"></i></button>
+                                                    <button type="button" class="btn btn-icon js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="user-add" role="tabpanel">
+                        <div class="card">
+                            <form id="users" class="card" enctype='application/json' method="POST" action="" novalidate="">
+                                <div class="card-body">
+                                    <div class="row clearfix">
+                                        <div class="col-lg-12 col-md-12 col-sm-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Employee ID *" name="empid">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="First Name *" name="firstName">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Last Name" name="lastName">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Official Email ID *" name="officialEmail">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Personal Email ID *" name="personalEmail">
+                                            </div>
+                                        </div>                                    
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="form-group">
+                                                <input type="number" class="form-control" placeholder="Mobile No" name="mob">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="form-group">
+                                                <select class="form-control show-tick" name="dept">
+                                                    <option value="0">Select Department</option>
+                                                    <option value="1">HR</option>
+                                                    <option value="2">Finance</option>
+                                                    <option value="3">IT</option>
+                                                </select>
+                                            </div>
+                                        </div><div class="col-md-4 col-sm-12">
+                                            <div class="form-group">
+                                                <select class="form-control show-tick" name="roleType">
+                                                    <option value="0">Select Role Type</option>
+                                                    <option value="1">Super Admin</option>
+                                                    <option value="2">Admin</option>
+                                                    <option value="3">Employee</option>
+                                                </select>
+                                            </div>
+                                        </div>                           
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="form-group">                                   
+                                                <input type="text" class="form-control" placeholder="Username *" name="username">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="form-group">
+                                                <input type="password" class="form-control" placeholder="Password" name="password">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="form-group">
+                                                <input type="password" class="form-control" placeholder="Confirm Password" id="confirmpassword">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Skype Id" name="skypeId">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Twitter Id" name="twitterId">
+                                            </div>
+                                        </div>                                    
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Linkedin Id" name="linkedinId">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4">
+                                            <div class="form-group">
+                                                <label class="custom-switch">
+                                                    <input type="checkbox" name="isActive" class="custom-switch-input">
+                                                    <span class="custom-switch-indicator"></span>
+                                                    <span class="custom-switch-description">Is Active</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4">
+                                            <div class="form-group">
+                                                <label class="custom-switch">
+                                                <input type="checkbox" name="isAgree" value="1" class="custom-switch-input" checked="">
+                                                <span class="custom-switch-indicator"></span>
+                                                <span class="custom-switch-description "><b>Is Agree</b></span>
+                                            </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4">
+                                            <div class="form-group">
+                                                <label class="custom-switch">
+                                                <input type="checkbox" name="isEmail" value="1" class="custom-switch-input" checked="">
+                                                <span class="custom-switch-indicator"></span>
+                                                <span class="custom-switch-description "><b>Is Email</b></span>
+                                            </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4">
+                                            <div class="form-group">
+                                                <label class="custom-switch">
+                                                <input type="checkbox" name="activeDashboardTab" value="1" class="custom-switch-input" checked="">
+                                                <span class="custom-switch-indicator"></span>
+                                                <span class="custom-switch-description "><b>Is Active Dashboard Tab</b></span>
+                                            </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4">
+                                            <div class="form-group">
+                                                <label class="custom-switch">
+                                                <input type="checkbox" name="deskNotify" value="1" class="custom-switch-input" checked="">
+                                                <span class="custom-switch-indicator"></span>
+                                                <span class="custom-switch-description "><b>Is Desktop Notify</b></span>
+                                            </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" hidden placeholder="company" name="company" value="51467b92-4dfc-47c9-8708-b80f686b5a51">
+                                            </div>
+                                        </div>photo=" + photo + ", gaccessToken=" + gaccessToken + "
+                                        <hr class="mt-4">
+                                        <!-- <div class="col-12">
+                                            <hr class="mt-4">
+                                            <h6>Module Permission</h6>
+                                            <div class="table-responsive">
+                                                <table class="table table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th></th>
+                                                            <th>Read</th>
+                                                            <th>Write</th>
+                                                            <th>Delete</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Super Admin</td>
+                                                            <td>
+                                                                <label class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked="">
+                                                                    <span class="custom-control-label">&nbsp;</span>
+                                                                </label>
+                                                            </td>
+                                                            <td>
+                                                                <label class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked="">
+                                                                    <span class="custom-control-label">&nbsp;</span>
+                                                                </label>
+                                                            </td>
+                                                            <td>
+                                                                <label class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked="">
+                                                                    <span class="custom-control-label">&nbsp;</span>
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Admin</td>
+                                                            <td>
+                                                                <label class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked="">
+                                                                    <span class="custom-control-label">&nbsp;</span>
+                                                                </label>
+                                                            </td>
+                                                            <td>
+                                                                <label class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
+                                                                    <span class="custom-control-label">&nbsp;</span>
+                                                                </label>
+                                                            </td>
+                                                            <td>
+                                                                <label class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
+                                                                    <span class="custom-control-label">&nbsp;</span>
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Employee</td>
+                                                            <td>
+                                                                <label class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked="">
+                                                                    <span class="custom-control-label">&nbsp;</span>
+                                                                </label>
+                                                            </td>
+                                                            <td>
+                                                                <label class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
+                                                                    <span class="custom-control-label">&nbsp;</span>
+                                                                </label>
+                                                            </td>
+                                                            <td>
+                                                                <label class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
+                                                                    <span class="custom-control-label">&nbsp;</span>
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>HR Admin</td>
+                                                            <td>
+                                                                <label class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked="">
+                                                                    <span class="custom-control-label">&nbsp;</span>
+                                                                </label>
+                                                            </td>
+                                                            <td>
+                                                                <label class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked="">
+                                                                    <span class="custom-control-label">&nbsp;</span>
+                                                                </label>
+                                                            </td>
+                                                            <td>
+                                                                <label class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked="">
+                                                                    <span class="custom-control-label">&nbsp;</span>
+                                                                </label>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <hr class="mt-4">
+                                            <div class="col-sm-6 col-md-4">
+                                                <div class="form-group">
+                                                    <label class="custom-switch">
+                                                    <input type="radio" name="isActive" value="1" class="custom-switch-input" checked="">
+                                                    <span class="custom-switch-indicator"></span>
+                                                    <span class="custom-switch-description "><b>Is Active</b></span>
+                                                </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4">
+                                                <div class="form-group">
+                                                    <label class="custom-switch">
+                                                    <input type="radio" name="isAgree" value="1" class="custom-switch-input" checked="">
+                                                    <span class="custom-switch-indicator"></span>
+                                                    <span class="custom-switch-description "><b>Is Agree</b></span>
+                                                </label>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-primary">Add</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+                                        </div>-->
+                                        <button type="submit" class="btn btn-primary" >Add</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>        
+        <div class="section-body">
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            Copyright © 2019 <a href="user/puffintheme/portfolio.html">PuffinTheme</a>.
+                        </div>
+                        <div class="col-md-6 col-sm-12 text-md-right">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item"><a href="doc/index.html">Documentation</a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)">FAQ</a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-outline-primary btn-icon">Buy Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>    
+</div>
+
+
+<script src="assets/bundles/lib.vendor.bundle.js"></script>
+<script src="assets/plugins/bootstrap-multiselect/bootstrap-multiselect.js"></script>
+<script src="assets/plugins/multi-select/js/jquery.multi-select.js"></script>
+<script src="assets/plugins/dropify/js/dropify.min.js"></script>
+<script src="assets/bundles/selectize.bundle.js"></script>
+<script src="assets/plugins/parsleyjs/js/parsley.min.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/form/parsleyjs.js"></script>
+<script src="assets/js/vendors/selectize.js"></script>
+<script src="assets/js/form/form-advanced.js"></script>
+<script src="assets/js/ajax/users.js"></script>
+<script src="assets/js/page/dialogs.js"></script>
+</body>
+</html>
