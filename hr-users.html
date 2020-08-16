@@ -12,9 +12,8 @@
 
 <!-- Bootstrap Core and vandor -->
 <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/plugins/bootstrap-multiselect/bootstrap-multiselect.css">
+<link rel="stylesheet" href="assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
 <link rel="stylesheet" href="assets/plugins/dropify/css/dropify.min.css">
-<link rel="stylesheet" href="assets/plugins/parsleyjs/css/parsley.css">
 <link rel="stylesheet" href="assets/plugins/sweetalert/sweetalert.css">
 
 <!-- Core css -->
@@ -243,53 +242,9 @@
                                     <div class="row clearfix">
                                         <div class="col-lg-12 col-md-12 col-sm-12">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Employee ID *" name="empid">
+                                                <input type="text" class="form-control" placeholder="Employee ID *" name="emp" value="dd6e8f54-556a-4bb7-94e4-758a4e9a3606">
                                             </div>
                                         </div>
-                                        <div class="col-lg-6 col-md-6 col-sm-12">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="First Name *" name="firstName">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6 col-sm-12">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Last Name" name="lastName">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-12">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Official Email ID *" name="officialEmail">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-12">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Personal Email ID *" name="personalEmail">
-                                            </div>
-                                        </div>                                    
-                                        <div class="col-md-4 col-sm-12">
-                                            <div class="form-group">
-                                                <input type="number" class="form-control" placeholder="Mobile No" name="mob">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-12">
-                                            <div class="form-group">
-                                                <select class="form-control show-tick" name="dept">
-                                                    <option value="0">Select Department</option>
-                                                    <option value="1">HR</option>
-                                                    <option value="2">Finance</option>
-                                                    <option value="3">IT</option>
-                                                </select>
-                                            </div>
-                                        </div><div class="col-md-4 col-sm-12">
-                                            <div class="form-group">
-                                                <select class="form-control show-tick" name="roleType">
-                                                    <option value="0">Select Role Type</option>
-                                                    <option value="1">Super Admin</option>
-                                                    <option value="2">Admin</option>
-                                                    <option value="3">Employee</option>
-                                                </select>
-                                            </div>
-                                        </div>                           
                                         <div class="col-md-4 col-sm-12">
                                             <div class="form-group">                                   
                                                 <input type="text" class="form-control" placeholder="Username *" name="username">
@@ -297,29 +252,35 @@
                                         </div>
                                         <div class="col-md-4 col-sm-12">
                                             <div class="form-group">
-                                                <input type="password" class="form-control" placeholder="Password" name="password">
+                                                <input type="password" class="form-control" placeholder="Password *" name="password">
                                             </div>
                                         </div>
                                         <div class="col-md-4 col-sm-12">
                                             <div class="form-group">
-                                                <input type="password" class="form-control" placeholder="Confirm Password" id="confirmpassword">
+                                                <input type="password" class="form-control" placeholder="Confirm Password *" id="confirmpassword">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                             <div class="form-group">
+                                                <div class="input-group">
+                                                    <input placeholder="Activation Date" data-provide="datepicker" data-date-autoclose="true" class="form-control" data-date-format="yyyy-mm-dd" name="actDate">
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-md-4 col-sm-12">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Skype Id" name="skypeId">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-12">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Twitter Id" name="twitterId">
-                                            </div>
-                                        </div>                                    
-                                        <div class="col-md-4 col-sm-12">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Linkedin Id" name="linkedinId">
-                                            </div>
-                                        </div>
+                                               <div class="input-group">
+                                                   <input placeholder="Billing Start Date" data-provide="datepicker" data-date-autoclose="true" class="form-control" data-date-format="yyyy-mm-dd" name="billingStartDate">
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-4 col-sm-12">
+                                        <div class="form-group">
+                                           <div class="input-group">
+                                               <input placeholder="Billing End Date" data-provide="datepicker" data-date-autoclose="true" class="form-control" data-date-format="yyyy-mm-dd" name="billingEndDate">
+                                           </div>
+                                       </div>
+                                   </div>
                                         <div class="col-sm-6 col-md-4">
                                             <div class="form-group">
                                                 <label class="custom-switch">
@@ -365,135 +326,8 @@
                                             </label>
                                             </div>
                                         </div>
-                                        <div class="col-md-4 col-sm-12">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" hidden placeholder="company" name="company" value="51467b92-4dfc-47c9-8708-b80f686b5a51">
-                                            </div>
-                                        </div>photo=" + photo + ", gaccessToken=" + gaccessToken + "
+                                        photo=" + photo + ", gaccessToken=" + gaccessToken + "
                                         <hr class="mt-4">
-                                        <!-- <div class="col-12">
-                                            <hr class="mt-4">
-                                            <h6>Module Permission</h6>
-                                            <div class="table-responsive">
-                                                <table class="table table-striped">
-                                                    <thead>
-                                                        <tr>
-                                                            <th></th>
-                                                            <th>Read</th>
-                                                            <th>Write</th>
-                                                            <th>Delete</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Super Admin</td>
-                                                            <td>
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked="">
-                                                                    <span class="custom-control-label">&nbsp;</span>
-                                                                </label>
-                                                            </td>
-                                                            <td>
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked="">
-                                                                    <span class="custom-control-label">&nbsp;</span>
-                                                                </label>
-                                                            </td>
-                                                            <td>
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked="">
-                                                                    <span class="custom-control-label">&nbsp;</span>
-                                                                </label>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Admin</td>
-                                                            <td>
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked="">
-                                                                    <span class="custom-control-label">&nbsp;</span>
-                                                                </label>
-                                                            </td>
-                                                            <td>
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
-                                                                    <span class="custom-control-label">&nbsp;</span>
-                                                                </label>
-                                                            </td>
-                                                            <td>
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
-                                                                    <span class="custom-control-label">&nbsp;</span>
-                                                                </label>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Employee</td>
-                                                            <td>
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked="">
-                                                                    <span class="custom-control-label">&nbsp;</span>
-                                                                </label>
-                                                            </td>
-                                                            <td>
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
-                                                                    <span class="custom-control-label">&nbsp;</span>
-                                                                </label>
-                                                            </td>
-                                                            <td>
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
-                                                                    <span class="custom-control-label">&nbsp;</span>
-                                                                </label>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>HR Admin</td>
-                                                            <td>
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked="">
-                                                                    <span class="custom-control-label">&nbsp;</span>
-                                                                </label>
-                                                            </td>
-                                                            <td>
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked="">
-                                                                    <span class="custom-control-label">&nbsp;</span>
-                                                                </label>
-                                                            </td>
-                                                            <td>
-                                                                <label class="custom-control custom-checkbox">
-                                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked="">
-                                                                    <span class="custom-control-label">&nbsp;</span>
-                                                                </label>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <hr class="mt-4">
-                                            <div class="col-sm-6 col-md-4">
-                                                <div class="form-group">
-                                                    <label class="custom-switch">
-                                                    <input type="radio" name="isActive" value="1" class="custom-switch-input" checked="">
-                                                    <span class="custom-switch-indicator"></span>
-                                                    <span class="custom-switch-description "><b>Is Active</b></span>
-                                                </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-4">
-                                                <div class="form-group">
-                                                    <label class="custom-switch">
-                                                    <input type="radio" name="isAgree" value="1" class="custom-switch-input" checked="">
-                                                    <span class="custom-switch-indicator"></span>
-                                                    <span class="custom-switch-description "><b>Is Agree</b></span>
-                                                </label>
-                                                </div>
-                                            </div>
-                                            <button type="button" class="btn btn-primary">Add</button>
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
-                                        </div>-->
                                         <button type="submit" class="btn btn-primary" >Add</button>
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
                                     </div>
@@ -527,15 +361,10 @@
 
 
 <script src="assets/bundles/lib.vendor.bundle.js"></script>
-<script src="assets/plugins/bootstrap-multiselect/bootstrap-multiselect.js"></script>
-<script src="assets/plugins/multi-select/js/jquery.multi-select.js"></script>
+<script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
 <script src="assets/plugins/dropify/js/dropify.min.js"></script>
 <script src="assets/bundles/selectize.bundle.js"></script>
-<script src="assets/plugins/parsleyjs/js/parsley.min.js"></script>
 <script src="assets/js/core.js"></script>
-<script src="assets/js/form/parsleyjs.js"></script>
-<script src="assets/js/vendors/selectize.js"></script>
-<script src="assets/js/form/form-advanced.js"></script>
 <script src="assets/js/ajax/users.js"></script>
 <script src="assets/js/page/dialogs.js"></script>
 </body>

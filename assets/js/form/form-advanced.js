@@ -4,7 +4,7 @@ $(function() {
     $('.colorpicker').colorpicker();
 
     // Date picker
-    $('.inline-datepicker').datepicker({
+    $('.inline-datepicker').datetimepicker({
         todayHighlight: true
     });
 

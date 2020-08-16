@@ -1,5 +1,6 @@
 const server_url = 'http://localhost:8081/';
 const client_url = 'http://localhost:8080/pmtweb/';
+const com = "544d08be-15f2-4838-8ce1-120015c173ec";
 $("#commonContent").load("commonContent.html");
     $("#toprightContent").load("toprightContent.html");
 $(document).ready(function() {
